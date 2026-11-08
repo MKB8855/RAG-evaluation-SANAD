@@ -1,0 +1,31 @@
+SANAD — Stage 3 Generation & Citation Verification
+
+Upstream decisions received from previous experiments:
+Selected retrieval: Dense
+Selected reranker: BAAI/bge-reranker-v2-m3
+
+Evaluation queries: 60
+Gold article available in final Top-3: 54/60 (90.00%)
+
+Generator comparison:
+- ALLaM-7B-Instruct-preview
+  Correctness: 4.417
+  Faithfulness: 4.150
+  Citation Accuracy (all): 80.00%
+  Citation Accuracy (gold available): 88.89%
+  Citation Precision: 95.83%
+  Hallucination Rate: 6.67%
+  Arabic Quality: 4.667
+  Avg Generation Time: 9.039s
+
+- Qwen3-8B
+  Correctness: 4.317
+  Faithfulness: 3.967
+  Citation Accuracy (all): 76.67%
+  Citation Accuracy (gold available): 85.19%
+  Citation Precision: 95.56%
+  Hallucination Rate: 5.00%
+  Arabic Quality: 4.567
+  Avg Generation Time: 16.029s
+
+Selected final generator: ALLaM-7B-Instruct-preview
